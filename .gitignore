@@ -1,5 +1,12 @@
 # Dependencies
-node_modules/
+# 包含所有 node_modules 除了 node-pty
+node_modules/*
+!node_modules/node-pty/
+node_modules/node-pty/*
+!node_modules/node-pty/build/
+!node_modules/node-pty/package.json
+!node_modules/node-pty/lib/
+
 client/node_modules/
 
 # Build outputs
